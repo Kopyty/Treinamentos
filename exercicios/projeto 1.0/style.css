@@ -1,0 +1,14 @@
+header {
+    background-color: rgb(211, 255, 255);
+    padding: 20px;
+    font-family: cursive;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(0, 83, 94);
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: rgb(0, 124, 124);
+}

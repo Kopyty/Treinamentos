@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM: Treinamento sem Olhar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area">
+          <h3>clicar</h3>
+          
+    </div>
+
+    <input type="button" value="Clica aqui tambem" onclick="botão()">
+
+    <script>
+        var bloco = window.document.getElementById('area')
+
+        bloco.addEventListener('click', clicar)
+        bloco.addEventListener('mouseenter', entrar)
+        bloco.addEventListener('mouseout', sair)
+
+        function clicar () {
+            bloco.innerHTML = '<h3>Obrigada!<h3>'
+        } 
+
+        function entrar () {
+            bloco.innerHTML = 'Clique!'
+        }
+
+        function sair () {
+            bloco.innerHTML = 'Por favor, clique!'
+        }
+
+
+        function botão () {
+            window.alert('Obrigada por ter clicado em mim!')
+            window.alert('O que você achou desse exercicio? fiz sozinha')
+            var pergunta = window.prompt('Opções: Bom! // Ruim!') 
+            if (pergunta == 'Ruim!') {
+                window.alert('Então faz melhor!')
+            } else if (pergunta == 'Bom!') {
+                window.alert('Muito obrigadaaa!!!!')
+            } else {
+                window.alert('Que?')
+            }
+        }
+
+    </script>
+</body>
+</html>

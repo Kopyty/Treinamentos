@@ -1,0 +1,12 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 115, 73);
+    color: white;
+}
+
+div#res {
+    background-color: rgb(255, 140, 73);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}

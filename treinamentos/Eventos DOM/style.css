@@ -1,0 +1,12 @@
+ body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(218, 112, 214, 0.822);
+    color: white;
+ }
+
+ div#area {
+    background-color: orchid;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+ }

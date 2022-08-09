@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f0cfdd;
+            border: 3px solid palevioletred ;
+            border-radius: 100px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+                               
+    <input type="number" name="txtn1" id="txtn1"> <!--essa tag é usada para formularios, essa tag permite uma barrinha para o usuario escolher algum numero-->
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()"> <!--o botão somar ja começa com os comandos javascript-->
+    <DIV id="res">
+        Resultado
+    </DIV>
+   
+    <script>
+        function somar () {
+
+            // configurações
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+
+            var n1 = Number(tn1.value) // a variavel tn1 recebeu txtn1 (name), e a variavel n1 recebeu tn1.
+            var n2 = Number (tn2.value) // a variavel tn2 recebeu txtn2 (name), e a variavel n2 recebeu tn2.
+            
+            // soma
+
+            var s = n1 + n2 
+            var res = window.document.getElementById('res')
+            res.innerHTML = s 
+            
+        }
+    </script>
+
+<HR>
+NÃO COLE NA ESCOLA!!!!!!!!!!!!!!!!!!!
+</body>
+</html>

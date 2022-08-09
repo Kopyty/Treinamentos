@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+
+            background-color: rgb(255, 228, 237);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Inicando estudos com DOM</h1>
+<P>Aqui vai o resultado</P>
+<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+<div id="msg">Clique em Mim</div>
+
+<script>
+           // window.document.write('<h1>Olá Mundo!</h1>') 
+          // window.document.write(window.navigator.appName)  // Apareceu "Netscape" 
+          // window.document.write(window.document.URL) 
+
+          var p1 = window.document.getElementsByTagName('p') [0] // 0, O primeiro paragrafo a aparecer
+          window.document.write(p1.innerHTML)
+
+          p1.style.color = 'red'
+
+          var corpo = window.document.body 
+          corpo.style.background = 'pink'
+
+          var d = window.document.getElementById('msg') // MSG = a identificação
+          d.style.background = 'white'
+
+           window.document.getElementById('msg').innerText = 'Olá!' // inner text recebe...
+          
+          // Com seletores 
+
+
+          var d = window.document.querySelector('divmsg')
+</script>
+
+<br> 
+</body>
+</html>

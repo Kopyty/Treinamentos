@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora sem Olhar</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+
+    <input type="number" id="num01"> +
+    <input type="number" id="num02">
+    <input type="button" value="Finalizar" onclick="somar()">
+    <div id="result">
+        <p><em>Resultado</em></p>
+    </div>
+
+    <script>
+        function somar() {
+           
+      
+       var num01 = window.document.getElementById('num01')
+       var num01 = window.document.getElementById('num02')
+
+       var n1 = Number(num01.value)
+       var n2 = Number(num02.value)
+
+       var s = window.document.getElementById('result')
+       var s = n1 + n2
+       result.innerHTML = 'A resposta foi ' + s
+
+    }
+    </script>
+</body>
+</html>

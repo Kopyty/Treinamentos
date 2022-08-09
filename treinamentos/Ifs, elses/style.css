@@ -1,0 +1,14 @@
+body {
+    font-family: fantasy;
+    background-color: rgb(255, 132, 60);
+    color: white;
+}
+
+
+input {
+    border-color:white;
+}
+
+footer {
+     padding-left: 30px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+      <style>
+             div#area {
+                background-color: rgb(215, 255, 255);
+                color: rgb(0, 0, 0);
+                padding: 40px;
+                border-radius: 90px;
+                border: rgb(116, 155, 177) 2px solid
+             }
+
+      </style>
+</head>
+<body>
+    <div id="area">
+        Clica ai em mim brother
+    </div>
+
+    <!--E no script, usamos as functions com os nomes dos eventos.-->
+
+
+    <script>
+         var a = window.document.getElementById('area') // <- esse comando deve ficar aqui, por que se eu colocasse em uma só function, funcionaria apenas para uma.
+
+         a.addEventListener('click', clicar) // esse comando são os ouvidores, eles ficam prestando atenção no proprio JS
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mouseout', sair)  // ele não vai precisar que use mouse outs e um monte de bla bla no HTML, só usar esse comando.
+         
+         function clicar() {
+           
+            a.innerText = 'Valeu por ter clicado em mim, BRO.'
+            a.style.background = 'pink' // quando você clica, o background (ou qualquer coisa) muda o estilo.
+            a.style.border = 'black' 
+         }
+ 
+
+         function entrar () {
+             
+            a.innerText = 'Você entrou'
+          
+         }
+
+         function sair () {
+            a.innerText = 'Saiu!'
+           
+         }
+
+
+
+         
+
+
+         
+    </script>
+</body>
+</html>

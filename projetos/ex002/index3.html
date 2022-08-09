@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 3</title>
+    <style>
+        h2, p {
+            background-image: linear-gradient(rgb(217, 217, 255), pink);
+            width: 900;
+            padding: 40px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`<h2>Olá. belo nome, ${nome}. Seu nome tem ${nome.length} letras</h2>`) 
+        document.write(`<p>Seu nome em maiusculas é ${nome.toUpperCase()} </p>`)
+        document.write(`<p>Seu nome em minusculas é ${nome.toLowerCase()} </p>`)
+        
+    </script>
+</body>
+</html>

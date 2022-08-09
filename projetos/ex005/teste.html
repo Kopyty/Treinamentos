@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREINAMENTO FORTÃO</title>
+</head>
+<body>
+    <input type="number" name="b1" id="bn1"> +
+    <input type="number" name="b1" id="bn2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <!--resto (aqui vai ser escrito o resultado da soma acima)-->
+<div id="res">
+
+</div>
+
+    <script>
+            function somar ()  {
+
+          var bn1 = window.document.getElementById('bn1')
+          var bn2 = window.document.getElementById('bn2')
+
+         var n1 = Number(bn1.value)
+         var n2 =  Number(bn2.value)
+
+         var s = n1 + n2
+         var res = window.document.getElementById('res')
+         res.innerText = s
+            }  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    font-family: cursive ;
+
+}
+
+#nipeme {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: palevioletred;
+}
+
+div#cabecalho {
+    background-image: linear-gradient(#ffe8f6, #ff8eb0 );
+    padding: 20px;
+    border-radius: 100px;
+    border: 15px solid palevioletred;
+}
+
+div#teste{
+    border: 12px solid rgb(255, 138, 167);
+    width: 90px;
+}
+

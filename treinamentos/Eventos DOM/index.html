@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamentos DOM</title>
+    <link rel="stylesheet" href="style.css">k
+</head>
+<body>
+    <h1>Meus treinamentos DOM.</h1>
+    <p>Um projeto chamado "Eventos DOM", é um arquivo HTML com JavaScript que permite que quando você clicar em um bloco (uma div), aconteça um evento, por exemplo o site interagir com o usuario, que aconteça algo depois do usuario clicar.. uma mensagem, um alerta, uma foto, alguma resposta da pagina.    </p>
+      <br>
+    <div id="area">
+        <h2>Clique aqui e veja o que aconteça!</h2>
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        
+
+
+        function clicar () {
+            a.innerHTML = 'Você clicou, teste mais!'
+        }
+
+        function entrar () {
+            a.innerHTML ='<h1>Você entrou!</h1>'
+        }
+
+      
+
+      
+    </script>
+</body>
+</html>

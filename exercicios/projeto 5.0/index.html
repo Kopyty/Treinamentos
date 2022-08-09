@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site apenas de Exercicio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="bloco">
+     <h5>NAO CLIQUE EM MIM!</h5>
+    </div>
+
+    <SCRIPT>
+       var pergunta = window.prompt('Por que você entrou aqui?..')
+       if (pergunta == 'Não sei') {
+        window.alert('Você não sabe?.. hm.. cuidado com o bloco.. não clique nele')
+       } else {
+        window.alert('Não entendi! mas cuidado com o bloco...')
+       }
+        var area = document.getElementById('bloco')
+        
+        bloco.addEventListener('click', clicar)
+        bloco.addEventListener('mouseenter', entrar)
+        bloco.addEventListener('mouseout', sair)
+
+        function clicar() {
+           bloco.innerHTML = 'AAAAAA! POR QUE VOCÊ CLICOU EM MIM? AGORA IREI HACKEAR SEU PC!'
+           bloco.style.background = 'red'
+           
+        }
+
+        function entrar () {
+            bloco.innerHTML = 'Se você clicar..'
+        }
+
+        function sair () {
+            bloco.innerHTML ='SAIA MESMO!'
+        }
+
+        
+        
+    </SCRIPT>
+
+
+<h1>Novo projeto em breve! <a href="perguntas.html">CLIQUE AQUI</a></h1>
+</body>
+</html>
